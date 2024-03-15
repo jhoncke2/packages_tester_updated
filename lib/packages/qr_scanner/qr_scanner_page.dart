@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:packages_tester_updated/packages/qr_scanner/widgets/mobile_scanner_view.dart';
-import 'package:simple_barcode_scanner/simple_barcode_scanner.dart';
 
 class QrScannerPage extends StatefulWidget {
   const QrScannerPage({Key? key}) : super(key: key);
@@ -18,6 +17,8 @@ class _QrScannerPageState extends State<QrScannerPage> {
   Widget build(BuildContext context) {
     //return MobileScannerView();
     return Scaffold(
+      body: MobileScannerView(),
+      /*
       body: SizedBox(
         width: MediaQuery.of(context).size.width,
         child: Column(
@@ -51,6 +52,7 @@ class _QrScannerPageState extends State<QrScannerPage> {
           ]
         ),
       ),
+      */
     );
   }
 }
